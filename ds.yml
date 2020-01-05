@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: dstest
+  labels:
+    app: logger
+spec:
+  selector:
+    matchLabels:
+      name: dtest
+  template:
+    metadata:
+      labels:
+        name: dtest
+    spec:
+      containers:
+      - name: dtest
+        image: redis
