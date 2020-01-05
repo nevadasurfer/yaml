@@ -4,6 +4,6 @@ metadata:
   # "namespace" omitted since ClusterRoles are not namespaced
   name: minikube
 rules:
-- apiGroups: [""]
+- apiGroups: ["*"]
   resources: ["pods"]
-  verbs: ["get", "watch", "list"]
+  verbs: ["get",  "list"]
