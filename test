@@ -1,4 +1,7 @@
 contexts:
+adding come conflickts
+ what up honky
+
 - context:
     cluster: kubernetes
     user: kubernetes-admin
