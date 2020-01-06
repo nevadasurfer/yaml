@@ -1,6 +1,9 @@
 contexts:
 - context:
     cluster: kubernetes
+    what up honky ....whibreak
+
+
     user: kubernetes-admin
   name: kubernetes-admin@kubernetes
 current-context: kubernetes-admin@kubernetes
