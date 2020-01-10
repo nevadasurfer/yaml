@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: git
+  name: git
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: git
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: git
+    spec:
+      containers:
+      - image: gitea/gitea
+        name: gitea
+        volumeMounts:
+        - mountPath: /data
+          name: giteadata
+      volumes:
+      - name: site-data
+        persistentVolumeClaim:
+          claimName: giteadata
+
