@@ -1,6 +1,0 @@
-    app.kubernetes.io/instance: minikube
-    app.kubernetes.io/managed-by: minkkube
-      app.kubernetes.io/instance: minikube
-        - name: mygitea
-          image: "gitea/gitea"
-          imagePullPolicy: IfNotPresent
